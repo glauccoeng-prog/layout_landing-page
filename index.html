@@ -9,7 +9,7 @@
     <title>MyBike - Take the Streets</title>
     <link
       rel="icon"
-      href="./images/favicon.svg"
+      href="./src/images/favicon.svg"
       type="image/svg+xml"
     />
     <link
@@ -27,11 +27,12 @@
     />
     <link
       rel="stylesheet"
-      href="./styles/main.scss"
+      href="./src/styles/main.scss"
     />
     <script
-      src="scripts/main.js"
+      src="./src/scripts/main.js"
       defer
+      type="module"
     ></script>
   </head>
   <body>
@@ -51,7 +52,7 @@
           >
             <span class="nav__phone-number">+1 234 555-55-55</span>
             <img
-              src="./images/icon-phone-call.svg"
+              src="./src/images/icon-phone-call.svg"
               alt="Phone icon"
               class="nav__icon"
             />
@@ -163,7 +164,7 @@
       <section class="hero">
         <img
           class="hero__image"
-          src="./images/bike-black.jpg"
+          src="./src/images/bike-black.jpg"
           alt="Cyclist on urban street"
         />
         <!-- Added fade-in animation class -->
@@ -193,7 +194,7 @@
           <article class="bike-card stagger-item">
             <img
               class="bike-card__image"
-              src="./images/bike-mini-1.png"
+              src="./src/images/bike-mini-1.png"
               alt="Sporty 4 bike"
             />
             <h3 class="bike-card__name">Sporty 4</h3>
@@ -206,7 +207,7 @@
           <article class="bike-card stagger-item">
             <img
               class="bike-card__image"
-              src="./images/bike-mini-2.png"
+              src="./src/images/bike-mini-2.png"
               alt="Ride in town ST bike"
             />
             <h3 class="bike-card__name">Ride in town ST</h3>
@@ -219,7 +220,7 @@
           <article class="bike-card stagger-item">
             <img
               class="bike-card__image"
-              src="./images/bike-mini-3.png"
+              src="./src/images/bike-mini-3.png"
               alt="Agile ride 3 bike"
             />
             <h3 class="bike-card__name">Agile ride 3</h3>
@@ -242,12 +243,12 @@
         <article class="detail">
           <div class="detail__images">
             <img
-              src="./images/unlock-1.png"
+              src="./src/images/unlock-1.png"
               alt="Auto unlock feature"
               class="detail__image detail__image--main"
             />
             <img
-              src="./images/unlock-2.png"
+              src="./src/images/unlock-2.png"
               alt="Bike detail"
               class="detail__image detail__image--side"
             />
@@ -262,12 +263,12 @@
         <article class="detail">
           <div class="detail__images">
             <img
-              src="./images/battery-1.png"
+              src="./src/images/battery-1.png"
               alt="Battery detail"
               class="detail__image detail__image--main"
             />
             <img
-              src="./images/battery-2.png"
+              src="./src/images/battery-2.png"
               alt="Integrated lights"
               class="detail__image detail__image--side"
             />
@@ -283,12 +284,12 @@
         <article class="detail">
           <div class="detail__images detail__images--reverse">
             <img
-              src="./images/hydraulic-1.png"
+              src="./src/images/hydraulic-1.png"
               alt="Lightweight frame"
               class="detail__image detail__image--side"
             />
             <img
-              src="./images/hydraulic-2.png"
+              src="./src/images/hydraulic-2.png"
               alt="Hydraulic disc brakes"
               class="detail__image detail__image--main"
             />
@@ -389,7 +390,7 @@
       <!-- Footer -->
       <footer class="footer">
         <img
-          src="./images/footer-down.jpg"
+          src="./src/images/footer-down.jpg"
           alt="Footer background"
           class="footer__image"
         />
