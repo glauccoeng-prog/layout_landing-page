@@ -1,0 +1,33 @@
+// ============================================
+// CABEÇALHO (HEADER)
+// Posicionado de forma absoluta sobre o hero
+// ============================================
+.header {
+  position: absolute;
+  inset-inline: 0; // Estica da esquerda à direita
+  top: 0;
+  z-index: 100; // Fica acima do conteúdo
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: clamp(1.5rem, 3vw, 2.25rem); // Padding vertical responsivo
+
+  @include container-padding;
+
+  max-width: 1260px;
+  margin-inline: auto;
+}
+
+// Logo da marca
+.logo {
+  display: block;
+  width: clamp(6rem, 15vw, 11.7rem); // Largura responsiva
+  height: clamp(1.8rem, 4.5vw, 3.5rem); // Altura responsiva
+  background: url('../images/mybike.svg') no-repeat center / contain;
+  flex-shrink: 0; // Não encolhe em flexbox
+  transition: opacity $transition-base ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
