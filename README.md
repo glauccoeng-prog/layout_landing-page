@@ -525,7 +525,34 @@ Este projeto está sob a licença **GPL-3.0**. Veja o arquivo [LICENSE](./LICENS
 
 ---
 
-## 👨‍💻 Autor
+## � Changelog
+
+### v1.1.0 (2026-01-12) - PR Fix
+
+#### 🐛 Correções
+- **Formulário de Contato**: Todos os campos agora são obrigatórios (`required`)
+  - Campo `name` - adicionado `required`
+  - Campo `email` - já possuía `required`
+  - Campo `message` - adicionado `required`
+
+- **Hero/Banner Full Screen**: Ajustado para ocupar tela cheia
+  - Altura: `100vh` (viewport completa)
+  - Largura: `100vw` (borda a borda)
+  - Imagem responsiva com `object-fit: cover`
+
+- **Header Alinhado**: Corrigido posicionamento do header
+  - Header movido para dentro do hero
+  - Padding responsivo usando `@include container-padding`
+  - Alinhamento consistente com o restante da página
+
+#### 📁 Arquivos Modificados
+- `index.html` - Campos required + estrutura do header/hero
+- `src/styles/sections/_hero.scss` - Hero 100vh full-width
+- `src/styles/layout/_header.scss` - Padding alinhado
+
+---
+
+## �👨‍💻 Autor
 
 **Glaucco Siqueira**
 
