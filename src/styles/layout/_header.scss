@@ -4,18 +4,18 @@
 // ============================================
 .header {
   position: absolute;
-  inset-inline: 0; // Estica da esquerda à direita
+  left: 0;
+  right: 0;
   top: 0;
   z-index: 100; // Fica acima do conteúdo
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-block: clamp(1.5rem, 3vw, 2.25rem); // Padding vertical responsivo
+  width: 100%; // Largura total
+  max-width: none; // Remove limite de largura
 
-  @include container-padding;
-
-  max-width: 1260px;
-  margin-inline: auto;
+  @include container-padding; // Usa o mesmo padding das seções
 }
 
 // Logo da marca

@@ -37,42 +37,52 @@
   </head>
   <body>
     <div class="mybike-container">
-      <!-- Header -->
-      <header class="header">
-        <a
-          href="#"
-          class="logo"
-          aria-label="MyBike Home"
-        ></a>
-        <nav class="nav">
+      <!-- Hero Section with Header inside -->
+      <section class="hero">
+        <!-- Header -->
+        <header class="header">
           <a
-            href="tel:+12345555555"
-            class="nav__phone"
-            aria-label="Call us"
-          >
-            <span class="nav__phone-number">+1 234 555-55-55</span>
-            <img
-              src="./src/images/icon-phone-call.svg"
-              alt="Phone icon"
-              class="nav__icon"
-            />
-          </a>
-          <!-- Added hamburger menu button with animated icon -->
-          <button
-            type="button"
-            class="nav__menu-btn"
-            id="menuOpen"
-            aria-label="Open menu"
-            aria-expanded="false"
-          >
-            <span class="nav__menu-icon">
-              <span></span>
-              <span></span>
-              <span></span>
-            </span>
-          </button>
-        </nav>
-      </header>
+            href="#"
+            class="logo"
+            aria-label="MyBike Home"
+          ></a>
+          <nav class="nav">
+            <a
+              href="tel:+12345555555"
+              class="nav__phone"
+              aria-label="Call us"
+            >
+              <span class="nav__phone-number">+1 234 555-55-55</span>
+              <img
+                src="./src/images/icon-phone-call.svg"
+                alt="Phone icon"
+                class="nav__icon"
+              />
+            </a>
+            <!-- Added hamburger menu button with animated icon -->
+            <button
+              type="button"
+              class="nav__menu-btn"
+              id="menuOpen"
+              aria-label="Open menu"
+              aria-expanded="false"
+            >
+              <span class="nav__menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </button>
+          </nav>
+        </header>
+        <img
+          class="hero__image"
+          src="./src/images/bike-black.jpg"
+          alt="Cyclist on urban street"
+        />
+        <!-- Added fade-in animation class -->
+        <h1 class="hero__title fade-in">Take the Streets</h1>
+      </section>
 
       <!-- Added mobile menu overlay -->
       <div
@@ -159,17 +169,6 @@
         class="mobile-menu__overlay"
         id="menuOverlay"
       ></div>
-
-      <!-- Hero Section -->
-      <section class="hero">
-        <img
-          class="hero__image"
-          src="./src/images/bike-black.jpg"
-          alt="Cyclist on urban street"
-        />
-        <!-- Added fade-in animation class -->
-        <h1 class="hero__title fade-in">Take the Streets</h1>
-      </section>
 
       <!-- Move Free Section -->
       <!-- Added scroll animation class -->
@@ -327,6 +326,7 @@
               name="name"
               placeholder="Name"
               aria-label="Name"
+              required
               class="contact__input"
             />
             <input
@@ -342,6 +342,7 @@
               placeholder="Message"
               aria-label="Message"
               rows="5"
+              required
               class="contact__textarea"
             ></textarea>
             <button
